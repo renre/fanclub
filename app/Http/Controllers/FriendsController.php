@@ -35,19 +35,27 @@ class FriendsController extends Controller
         ]);
     }
 
+    public function rental()
+    {
+         $friend = new Friend;
+
+        return view('friends.rental', [
+            'friend' => $friend,
+        ]);
+        
+        
+    }
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-            $friend = new Friend;
+     
+     public function store(Request $request)
+    {   $friend = new Friend;
         $friend->content = $request->content;
-         $friend->level = $request->level;
         $friend->save();
-
         return redirect('/');
     }
 
@@ -74,7 +82,7 @@ class FriendsController extends Controller
      */
     public function edit($id)
     {
-           $message = Message::find($id);
+           $friend = Friend::find($id);
 
         return view('friends.edit', [
             'friend' => $friend,
@@ -91,9 +99,8 @@ class FriendsController extends Controller
      */
     public function update(Request $request, $id)
     {
-                $friend = Friend::find($id);
+        $friend = Friend::find($id);
         $friend->content = $request->content;
-     $friend->level = $request->level;
         $friend->save();
 
         return redirect('/');
@@ -113,4 +120,14 @@ class FriendsController extends Controller
         return redirect('/');
     
     }
+    
+      public function jump()
+    {
+         $friend = new Friend;
+
+        return view('friends.jump', [
+            'friend' => $friend,
+        ]);
+    }
+    
 }

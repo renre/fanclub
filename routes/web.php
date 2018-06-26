@@ -12,4 +12,8 @@
 */
 Route::get('/', 'FriendsController@index');
 
+
+ Route::get('rental', 'FriendsController@rental')->name('friends.rental');
+ Route::get('jump', 'FriendsController@jump')->name('friends.jump');
+
 Route::resource('friends', 'FriendsController');

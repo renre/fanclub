@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* チャプター：全体の設定 */
+body {
+    background-color:#F4F5F7;
+}
+
+.img_header img{
+display: block;
+margin:auto;
+}
+
+
+/* チャプター：ヘッダー */
+header {
+    width: 1050px;
+    margin: 0 auto;
+ 
+}
+
+ .txt {
+    display: inline-block;
+    text-align: left;
+  }
+
+
+
+ .main {
+     line-height : 1.7 ;
+    text-align: center;
+     width:700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+figcaption{
+    color:red;
+}
+
+figure2{
+    float:left;
+}
+
+#global_navi ul li {
+    list-style:none;
+    font-size: 24px;  /* フォントサイズ復活 */
+    display: inline-block;
+    width: 310px;
+    text-align: center;
+    color:black;
+    background-color: #FFC7AF;
+
+}
+
+ol {
+    list-style: none;
+    padding:0;
+    margin:0;
+       font-size:20px;
+}
+
+li {
+    display: inline-block;
+    text-align: left;
+  }
+
+
+/*チャプター：メインエリア*/
+
+h1{
+    font-size:60px;
+    color:#FF4F02;
+}
+h2{
+    font-size:40px;
+      color:#FF4F02;
+}
+h3{
+    font-size:30px;
+      color:#FF4F02;
+}
+
+p{
+    font-size:20px;
+}
+
+
+ .fanname thead tr th {
+    width: 600px;
+    text-align: center;
+    margin:auto;
+  }
+
+/* チャプター：サイドバー */
+
+
+footer {
+    background-color: #FFC7AF;
+    text-align: center;
+}
+

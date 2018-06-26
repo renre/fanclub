@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* チャプター：全体の設定 */
+body {
+    background-color:#F4F5F7;
+}
+
+
+p{
+    text-align:center;
+}
+
+
+ table.table {
+    display: block;
+    position: relative;
+  }
+
+
+  table.table thead {
+   display: block;
+     width: auto;
+  }
+  table.table thead tr {
+    display: inline-block;
+  }
+  table.table thead tr th {
+       border: 1px solid #777;
+  padding: 1em;
+  background: #111;
+  color: #fff;
+    display: block;
+    text-align: center;
+  }
+
+
+
+  table.table tbody {
+    display: block;
+    width: auto;
+  }
+  table.table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.table tbody tr td {
+    display: block;
+    text-align: center;
+    }
