@@ -47,23 +47,24 @@
     <div id="inner">   
    
       <div id = "sidebar">
-         <div class="container">
+     
             <div class="panel panel-info">
                   <div class="panel-heading">
                     <h3 class="panel-title">新着情報</h3>
                   </div>
                 <div class="panel-body">
                     <ul class="list-unstyled">
-                      <li><a href="#">友達リクエストが1件あります</a></li>
-                      <li><a href="#">メッセージが3件届いています</a></li>
+                      <li><a href="#bokunofan">現在の会員数は{!! count($friends) !!}人です</a></li>
+                  <br><br>
+                    {{  link_to_route('friends.picture','3件の写真が掲載されています') }}
                     </ul>
                 </div>
             </div>
-         </div>
+         
                
      </div> 
     
-   
+     <a href="{{ route('login.post') }}">ログイン</a>
    
             <div class="main">
                 <h1>ようこそれんたろファンクラブへ!!</h1>
@@ -137,7 +138,7 @@
     
 @extends('layouts.app')
 @section('content')
-    <h1>僕のファンたち</h1>
+    <h1> <a name = "bokunofan" >僕のファンたち</a></h1>
     
  @if (count($friends) > 0)
     <table class="fanname table-striped">

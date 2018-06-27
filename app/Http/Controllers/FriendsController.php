@@ -130,4 +130,13 @@ class FriendsController extends Controller
         ]);
     }
     
+       public function picture()
+    {
+         $friend = new Friend;
+
+        return view('friends.picture', [
+            'friend' => $friend,
+        ]);
+    }
+    
 }
